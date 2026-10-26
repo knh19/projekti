@@ -1,5 +1,5 @@
-import { Model, DataTypes } from 'sequelize'
-import { sequelize } from '../utils/db.js'
+const  { Model, DataTypes } = require('sequelize')
+const{ sequelize } = require ('../utils/db.js')
 
 class Event extends Model {}
 
@@ -32,4 +32,5 @@ Event.init({
   modelName: 'event'
 })
 
-export default Event
+Event.sync()
+module.exports = Event
