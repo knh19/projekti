@@ -2,7 +2,7 @@ POST http://localhost:3001/api/events
 Content-Type: application/json
 
 {
-  "name": "Ohjelmointi-ilta",
+  "name": "s",
   "description": "Tehdään yhdessä React-projekteja.",
   "date": "2026-11-10T18:00:00+02:00",
   "location": "Espoo"
