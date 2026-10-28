@@ -32,5 +32,5 @@ Event.init({
   modelName: 'event'
 })
 
-Event.sync()
+
 module.exports = Event

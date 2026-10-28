@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 const loginRouter = require('express').Router()
 
 const { SECRET } = require('../utils/config')
-const User = require('../models/user')
+const {User} = require('../models/')
 
 loginRouter.post('/', async (request, response) => {
   const { username, password } = request.body

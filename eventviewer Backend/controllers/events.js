@@ -1,6 +1,6 @@
 const eventRouter = require('express').Router()
 const { response } = require('express')
-const Event = require('../models/event')
+const {Event} = require('../models/')
 
 eventRouter.get('/', async(request,  response)=>{
   const event = await Event.findAll({
