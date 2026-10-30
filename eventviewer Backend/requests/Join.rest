@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/registrations
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imhha2FuMCIsImlkIjozLCJpYXQiOjE3OTMyNjg2MDgsImV4cCI6MTc5MzI3MjIwOH0.Kj1jSjcd0hs48_J6W0Mm3aA5Lc6G1kEAEc9jMaJO22k
+
+{
+   "eventId": 1
+}
