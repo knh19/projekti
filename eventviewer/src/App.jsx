@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import eventService from './services/events'
 import loginService from './services/login'
 
+
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -65,7 +66,7 @@ const Hero = styled.section`
   }
 
   h1 span {
-    color: #3b82f6;
+    color: #0047ba;
   }
 
   p {
@@ -154,6 +155,7 @@ const App = () => {
   const [register, setRegister] = useState(false)
   const [message, setMessage] = useState('')
   const [busy, setBusy] = useState(false)
+  
 
   useEffect(() => {
     eventService.getAll()
@@ -254,7 +256,7 @@ const App = () => {
 
         <Hero>
           <div>
-            <small style={{ color: '#3b82f6' }}>
+            <small style={{ color: '#005bee' }}>
               PIENIÄ HETKIÄ, ISOJA KOHTAAMISIA
             </small>
 
@@ -276,7 +278,7 @@ const App = () => {
             </Button>
           </div>
 
-          
+
         </Hero>
 
         <Content>

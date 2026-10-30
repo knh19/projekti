@@ -18,4 +18,10 @@ const register = async (eventId, token) => {
   )
   return response.data
 }
-export default { getAll, register } 
+
+const remove = async (id, token) => {
+  await axios.delete(`${baseUrl}/${id}`, {
+    headers: { Authorization: `Bearer ${token}` }
+  })
+}
+export default { getAll, register, remove } 
